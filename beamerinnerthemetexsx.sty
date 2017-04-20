@@ -1,0 +1,35 @@
+\mode<presentation>
+% Items
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \draw[rounded corners=8pt,color=darkcomer,line width=1.0pt] (0.3, 0.2) rectangle (15.7, 9.8) {};
+  \fill[rounded corners=8pt,color=comer] (0.31, 0.21) rectangle (15.69, 9.79) {};
+  \ifnum\thepage>1\relax%
+   \fill[comer,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+} 
+
+%/insertdate
+
+% Title page
+\defbeamertemplate*{title page}{texsx}[1][]
+{ 
+\begin{columns}
+\column{.9\linewidth}
+   \vskip2cm%
+   \begin{beamercolorbox}[center, #1]{title page header}
+      \usebeamerfont{title}\inserttitle\par%
+    \end{beamercolorbox}%
+    \vskip2cm%
+    \begin{beamercolorbox}[center, #1]{author}
+      \usebeamerfont{author}\insertauthor%
+    \end{beamercolorbox}
+  \vfill
+\end{columns}
+
+}
+
+\mode
+<all>
