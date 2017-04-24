@@ -2,16 +2,17 @@
 \usepackage{newtxtext,newtxmath}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
 
 \setbeamertemplate{footline}{
 	\hspace*{.5cm}\scriptsize{\insertshorttitle\hspace*{50pt} \hfill\insertframenumber\hspace*{.5cm}}\vspace{9pt}
 } 
 
-\title{\textbf{CS636: Internetworking \\ Presentation}}
+\title{\textbf{CS636: Internetworking}}
 \date[ISPN ’80]{Copyright \textcopyright 2017 by Austin Schwartz \& Eric Theller. All rights reserved}
 \author[Comer]{\textbf{Austin Schwartz \& Eric Theller \\ Computer Science \\ Purdue University}}
 
-\usetheme{texsx}
+\usetheme{comer}
 
 \begin{document}
 
@@ -47,13 +48,24 @@
 }
 
 \begin{frame}
-
 \frametitle{ % sorry this is hacky
 \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \\
 Module I \\ \bigskip
-Course Overview \\
-And \\
-Introduction} 
+Introduction\\
+And\\
+Course Overview} 
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=darkcomer}
+\begin{frame} 
+\frametitle{Austin Schwartz}
+...
+\end{frame}
+
+\setbeamercolor{background canvas}{bg=darkcomer}
+\begin{frame} 
+\frametitle{Eric Theller}
+...
 \end{frame}
 
 \setbeamercolor{background canvas}{bg=darkcomer}
@@ -79,6 +91,25 @@ Internetworking: an overview of concepts, terminology, and technology underlying
 \item[\textbullet] Functions of protocols including IP, TCP, UDP, SMTP, HTTP, DHCP, and more
 \item[\textbullet] Layering model
 \end{itemize}
+\end{frame}
+
+\renewcommand{\baselinestretch}{1.3}
+\begin{frame}{\sout{You Will Learn}\\What We Learned}
+\begin{itemize}
+\item[\textbullet] Network protocols are hard
+\item[\textbullet] IPv6 is weird (but some things are really nice!)
+\begin{itemize}
+  \item[--] ...
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{ % sorry this is hacky
+\bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \\
+Module II \\ \bigskip
+Our Project} 
 \end{frame}
 
 \end{document}
